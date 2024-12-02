@@ -1288,12 +1288,12 @@ void WaveshareEPaper2P9InD::display() {
   this->data(0xA5);
 }
 
-int WaveshareEPaper2P9InD::get_width_internal() { 
-  return 128; 
+int WaveshareEPaper2P9InD::get_width_internal() {
+  return 128;
 }
 
-int WaveshareEPaper2P9InD::get_height_internal() { 
-  return 296; 
+int WaveshareEPaper2P9InD::get_height_internal() {
+  return 296;
 }
 
 void WaveshareEPaper2P9InD::dump_config() {
