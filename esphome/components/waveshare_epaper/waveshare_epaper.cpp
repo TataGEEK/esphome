@@ -1259,7 +1259,6 @@ void WaveshareEPaper2P9InD::initialize() {
   // VCOM_DC settings
   this->command(0x82);  // Command: VDCS
   this->data(0x12);     // Dafault VCOM_DC
-
 }
 
 void WaveshareEPaper2P9InD::display() {
@@ -1288,14 +1287,8 @@ void WaveshareEPaper2P9InD::display() {
   this->data(0xA5);
 }
 
-int WaveshareEPaper2P9InD::get_width_internal() {
-  return 128;
-}
-
-int WaveshareEPaper2P9InD::get_height_internal() {
-  return 296;
-}
-
+int WaveshareEPaper2P9InD::get_width_internal() { return 128; }
+int WaveshareEPaper2P9InD::get_height_internal() { return 296; }
 void WaveshareEPaper2P9InD::dump_config() {
   LOG_DISPLAY("", "Waveshare E-Paper", this);
   ESP_LOGCONFIG(TAG, "  Model: 2.9in (D)");
